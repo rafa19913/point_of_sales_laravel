@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('crearProducto','ProductoController@store'); // Ruta que se utiliza en el copmonente AgregarComponent.vue
+
+
